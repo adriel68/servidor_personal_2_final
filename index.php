@@ -21,13 +21,11 @@
 
 <?php
 
-print_r($_GET);
-if($_GET["error"] == 100) {
-    echo "Se ha detectado un acceso indebido jaja";
-}
-
-
-
+    // validamos el warning
+    if (!empty($_GET["error"]) && $_GET["error"] == 100) 
+    {
+        echo "Se ha detectado un accexo indebido";        
+    }
 
 ?>
 
